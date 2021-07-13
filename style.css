@@ -1,0 +1,116 @@
+/* POPPINS FONT LINK */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+/* CSS STARTS FROM HERE */
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* HEADER */
+header {
+  background-color: #2d25a0;
+  width: 1517px;
+  height: 700px;
+}
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+}
+nav .left-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 42px;
+}
+nav .left-nav li {
+  list-style: none;
+  margin-right: 35px;
+}
+nav .left-nav li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.right-nav {
+  background-color: #e02c6d;
+  padding: 12px 34px;
+  color: #ffffff;
+  align-items: center;
+  margin-top: 35px;
+}
+.right-nav i {
+  font-size: 14px;
+  margin-right: 5px;
+}
+.right-nav span {
+  font-size: 15px;
+}
+
+/* Header Last Part */
+
+.header-last {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 67px;
+  display: flex;
+}
+/* Left side */
+.left-side h1 {
+  font-size: 64px;
+  width: 485px;
+  height: 230px;
+  color: #fff;
+  line-height: 80px;
+  margin-bottom: 50px;
+}
+.button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #e02c6d;
+  padding: 12px 34px;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+.button i {
+  margin-left: 10px;
+}
+.button:hover {
+  box-shadow: inset 300px 0 0 0 #05fc26;
+  color: black;
+}
+
+/* Right Side */
+.right-side img {
+  width: 556.01px;
+  height: 438px;
+  margin-left: 102px;
+}
+/* HEADER END */
+
+/* Main Part Starts */
+main {
+  margin-top: 85px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.main {
+  width: 1050px;
+  margin-left: 230px;
+  margin-right: 210px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 27px;
+}
+.player-info {
+  width: 300px;
+  padding: 13px;
+  box-shadow: 0 0 10px #d1cccc;
+}
+.player-info img {
+  width: 300px;
+  height: 256px;
+}
