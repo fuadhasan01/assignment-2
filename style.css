@@ -33,20 +33,24 @@ nav .left-nav li a {
   color: #ffffff;
 }
 .right-nav {
-  background-color: #e02c6d;
-  padding: 12px 34px;
-  color: #ffffff;
   align-items: center;
   margin-top: 35px;
 }
-.right-nav i {
-  font-size: 14px;
-  margin-right: 5px;
+.button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #e02c6d;
+  padding: 12px 34px;
+  transition: ease-out 0.7s;
+  outline: none;
 }
-.right-nav span {
-  font-size: 15px;
+.button i {
+  margin-left: 10px;
 }
-
+.button:hover {
+  box-shadow: inset 300px 0 0 0 #05fc26;
+  color: black;
+}
 /* Header Last Part */
 
 .header-last {
@@ -64,21 +68,6 @@ nav .left-nav li a {
   color: #fff;
   line-height: 80px;
   margin-bottom: 50px;
-}
-.button {
-  text-decoration: none;
-  color: #fff;
-  background-color: #e02c6d;
-  padding: 12px 34px;
-  transition: ease-out 0.3s;
-  outline: none;
-}
-.button i {
-  margin-left: 10px;
-}
-.button:hover {
-  box-shadow: inset 300px 0 0 0 #05fc26;
-  color: black;
 }
 
 /* Right Side */
@@ -113,4 +102,91 @@ main {
 .player-info img {
   width: 300px;
   height: 256px;
+}
+.player-info h1 {
+  margin: 10px 0;
+}
+.player-info p {
+  color: darkgray;
+  margin-top: 10px;
+}
+/* Main Last Part */
+.highlights {
+  display: flex;
+  margin-top: 165px;
+  margin-bottom: 158px;
+}
+.highlight-info {
+  width: 466px;
+}
+.highlight-info h1 {
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 0;
+}
+.highlight-info p {
+  margin-top: 5px;
+  margin-bottom: 35px;
+  width: 90%;
+  color: darkgray;
+}
+.match-image {
+  width: 567px;
+  margin-left: 50px;
+}
+.match-image img {
+  width: 100%;
+}
+
+/* Main Part End */
+
+/* Footer Part Starts */
+
+footer {
+  width: 483.87px;
+  height: 213px;
+  margin: 0 auto 63px auto;
+}
+.football-logo {
+  width: 400px;
+  margin: 0 auto;
+}
+.football-logo img {
+  width: 100%;
+}
+.social-logo {
+  width: 190px;
+  margin: 0 auto;
+}
+.social-logo i {
+  background-color: #e7e7e7;
+  font-size: 1.3em;
+  margin-right: 9px;
+  border-radius: 50%;
+  padding: 7px;
+  color: rgb(165, 165, 165);
+  transition: ease-out 0.7s;
+  outline: none;
+  cursor: pointer;
+}
+.social-logo i:hover {
+  box-shadow: inset 300px 0 0 0 rgb(0, 0, 0);
+  color: #fff;
+}
+.copyright p {
+  text-align: center;
+  font-size: 19px;
+}
+
+/***************
+ RESPONSIVE PART 
+ ***************/
+
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .menu,
+  .main,
+  .right {
+    width: 100%;
+  }
 }
