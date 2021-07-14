@@ -181,7 +181,6 @@ footer {
 /***************
  RESPONSIVE PART 
  ***************/
-
 @media only screen and (max-width: 688px) {
   /* For mobile phones: */
   body {
@@ -190,7 +189,7 @@ footer {
     width: 100%;
   }
   header {
-    padding: 0;
+    padding: 13px;
     margin: 0;
     width: 100%;
     height: 700px;
@@ -201,6 +200,7 @@ footer {
   }
   nav .left-nav {
     width: 100%;
+    flex-direction: column;
   }
   nav ul {
     width: 100%;
@@ -230,12 +230,11 @@ footer {
   main {
     width: 100%;
     margin-top: 85px;
-    margin-right: 0px;
+    margin-right: 0;
   }
   .main {
     width: 100%;
-    margin-left: 20px;
-    margin-right: 0;
+    margin: 0;
     padding-bottom: 0px;
   }
   .players {
@@ -243,25 +242,30 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 27px;
   }
+  .player-info {
+    margin-left: 45px;
+    padding: 25px;
+  }
   .highlights {
     display: block;
     margin-top: 70px;
     margin-bottom: 50px;
-    width: 400px;
+    width: 100%;
   }
   .highlight-info {
     width: 100%;
     padding-bottom: 30px;
+    margin-left: 40px;
   }
   .highlight-info h1 {
     width: 100%;
-    font-size: 40px;
+    font-size: 45px;
     line-height: 60px;
     margin-bottom: 0;
   }
   .match-image {
-    width: 100%;
-    margin-left: 0px;
+    width: 90%;
+    margin-left: 40px;
   }
   .match-image img {
     width: 100%;
