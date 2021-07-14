@@ -76,9 +76,14 @@ nav .left-nav li a {
   height: 438px;
   margin-left: 102px;
 }
+header:hover .right-side img {
+  transform: scale(1.08) skew(-3deg);
+  transition: all 0.8s ease-in-out;
+}
 /* HEADER END */
 
 /* Main Part Starts */
+
 main {
   margin-top: 85px;
   display: grid;
@@ -110,7 +115,9 @@ main {
   color: darkgray;
   margin-top: 10px;
 }
+
 /* Main Last Part */
+
 .highlights {
   display: flex;
   margin-top: 165px;
@@ -134,18 +141,79 @@ main {
   width: 567px;
   margin-left: 50px;
 }
+.match-image:hover {
+  background-image: url(images/messi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.match-image:hover img {
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
 .match-image img {
   width: 100%;
 }
 
 /* Main Part End */
 
-/* Footer Part Starts */
+/* All Highlights Here */
+.all-highlights {
+  margin-left: 230px;
+  margin-right: 210px;
+  margin-bottom: 150px;
+  padding-bottom: 50px;
+}
+.all-highlights h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.all-highlights .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 60px;
+  margin-left: 80px;
+  margin-bottom: 100px;
+}
+.highlight {
+  width: 250px;
+}
+.highlight img {
+  width: 224px;
+  height: 127px;
+}
+.highlight p {
+  font-size: 17px;
+  margin-top: 8px;
+}
+#more {
+  background-color: chocolate;
+}
+/* HIGHLIGHT ENDS */
+
+/* Footer-1 */
+.footer-1 {
+  display: flex;
+  width: 70%;
+  margin: 50px auto 50px auto;
+}
+.footer-1 .left {
+  margin: 0 auto;
+}
+.footer-1 .right {
+  margin: 0 auto;
+}
+.footer-1 p {
+  font-size: 12px;
+  cursor: pointer;
+}
+/* footer-1 ends */
+
+/* Footer-2 Part Starts */
 
 footer {
   width: 483.87px;
   height: 213px;
-  margin: 0 auto 63px auto;
+  margin: 60px auto 63px auto;
 }
 .football-logo {
   width: 400px;
@@ -177,6 +245,7 @@ footer {
   text-align: center;
   font-size: 19px;
 }
+/* END OF FOOTER-2 PART */
 
 /***************
  RESPONSIVE PART 
@@ -191,7 +260,7 @@ footer {
   header {
     padding: 13px;
     margin: 0;
-    width: 100%;
+    width: 110%;
     height: 700px;
   }
   header nav {
@@ -224,7 +293,7 @@ footer {
   }
   .right-side img {
     height: 300px;
-    width: 90%;
+    width: 80%;
     margin-left: 10px;
   }
   main {
@@ -240,7 +309,6 @@ footer {
   .players {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 27px;
   }
   .player-info {
     margin-left: 45px;
@@ -270,6 +338,33 @@ footer {
   .match-image img {
     width: 100%;
   }
+  .all-highlights {
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 0;
+    margin-bottom: 150px;
+    padding-bottom: 50px;
+  }
+  .all-highlights .container {
+    display: grid;
+    margin-left: 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .all-highlights h1 {
+    width: 100%;
+    margin: 0 0 40px 0;
+    width: 170px;
+    padding: 0;
+    text-align: center;
+  }
+  .footer-1 {
+    margin: 0;
+    width: 100%;
+  }
+
+  hr {
+    width: 70%;
+  }
   footer {
     width: 100%;
     margin-top: 0;
@@ -282,3 +377,4 @@ footer {
     width: 100%;
   }
 }
+/* END OF RESPONSIVE PART */
